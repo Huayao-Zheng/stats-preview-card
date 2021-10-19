@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- [Live]()
-- [Solution]()
+- [Live](https://lonelybuddy.github.io/stats-preview-card/)
+- [Solution](https://www.frontendmentor.io/solutions/html-css-andsass-CZIb3RQIw)
 
 ### Built with
 
