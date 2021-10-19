@@ -1,6 +1,7 @@
 $bg-color: #0a0c1c;
 $text-color: #ffffff;
 $purple: #ab5cdb;
+$mobile: 62.5rem;
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@ $purple: #ab5cdb;
 }
 
 body {
+  position: relative;
   background: $bg-color;
   font-family: 'Inter', sans-serif;
   height: 100vh;
@@ -70,6 +72,45 @@ body {
         opacity: 0.5;
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 4.375rem;
+    color: $text-color;
+  }
+}
+
+@media (max-width: $mobile) {
+  body {
+    main {
+      grid-template-columns: 20.438rem;
+      grid-template-rows: 15rem auto;
+      .left-col {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+        padding: 2.5rem 1.969rem 2rem 1.969rem;
+        text-align: center;
+        h1 {
+          font-size: 1.75rem;
+          line-height: 2rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 2.5rem;
+        }
+        .business-states {
+          flex-direction: column;
+          max-height: unset;
+          .state {
+            height: 4.5rem;
+          }
+        }
+      }
+      .right-col {
+        grid-column: 1;
+        grid-row: 1 / 2;
       }
     }
   }
