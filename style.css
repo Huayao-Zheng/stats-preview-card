@@ -25,11 +25,12 @@ body main {
   max-width: 69.375rem;
   border-radius: 0.5rem;
   overflow: hidden;
-  -webkit-box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
-          box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+  -webkit-box-shadow: 0px 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+          box-shadow: 0px 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
 }
 
 body main .left-col {
+  background: #1b1937;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -98,7 +99,7 @@ body footer {
   color: #ffffff;
 }
 
-@media (max-width: 62.5rem) {
+@media (max-width: 67.875rem) {
   body main {
     -ms-grid-columns: 20.438rem;
         grid-template-columns: 20.438rem;
